@@ -1,15 +1,15 @@
 package joaomneto
 
+import joaomneto.Runner.printResults
 import java.io.InputStream
 
 object Day1 {
     fun run(){
-        val input = parseFile(this::class.java.getResourceAsStream("/day1.input")!!)
-        println("Solution for day 1 (part 1): ${solutionPart1(input)}")
-        println("Solution for day 1 (part 2): ${solutionPart2(input)}")
+        val input = parseFilePart1(this::class.java.getResourceAsStream("/day1.input")!!)
+        printResults(solutionPart1(input), solutionPart2(input))
     }
 
-    fun parseFile(inputStream: InputStream) = inputStream.bufferedReader().lines().toList().fold(mutableListOf(mutableListOf<Int>())){acc, s ->
+    fun parseFilePart1(inputStream: InputStream) = inputStream.bufferedReader().lines().toList().fold(mutableListOf(mutableListOf<Int>())){acc, s ->
         if(s.isBlank()){
             acc.add(mutableListOf())
         }else{

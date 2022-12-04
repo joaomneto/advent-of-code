@@ -13,9 +13,8 @@ object Day3 {
 
     fun run() {
         val inputPart1 = parseFilePart1(this::class.java.getResourceAsStream("/day3.input")!!)
-        println("Solution for day 3 (part 1): ${solutionPart1(inputPart1)}")
         val inputPart2 = parseFilePart2(this::class.java.getResourceAsStream("/day3.input")!!)
-        println("Solution for day 3 (part 2): ${solutionPart2(inputPart2)}")
+        Runner.printResults(solutionPart1(inputPart1), solutionPart2(inputPart2))
     }
 
     fun parseFilePart1(inputStream: InputStream) =

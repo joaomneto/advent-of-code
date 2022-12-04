@@ -3,6 +3,7 @@ package joaomneto
 import joaomneto.Day2.Outcome.*
 import joaomneto.Day2.Shape.Companion.fromMyPlay
 import joaomneto.Day2.Shape.Companion.fromOpponentPlay
+import joaomneto.Runner.printResults
 import java.io.InputStream
 import kotlin.streams.asSequence
 
@@ -48,9 +49,8 @@ object Day2 {
 
     fun run() {
         val inputPart1 = parseFilePart1(this::class.java.getResourceAsStream("/day2.input")!!)
-        println("Solution for day 2 (part 1): ${solutionPart1(inputPart1)}")
         val inputPart2 = parseFilePart2(this::class.java.getResourceAsStream("/day2.input")!!)
-        println("Solution for day 2 (part 2): ${solutionPart2(inputPart2)}")
+        printResults(solutionPart1(inputPart1), solutionPart2(inputPart2))
     }
 
     fun parseFilePart1(inputStream: InputStream) =
