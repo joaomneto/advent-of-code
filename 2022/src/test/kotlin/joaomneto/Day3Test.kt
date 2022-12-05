@@ -42,13 +42,14 @@ object Day3Test {
 
     @Test
     fun `parseFilePart1 works as intended`() {
-        val inputString =
-            "vJrwpWtwJgWrhcsFMMfFFhFp\n" +
-                "jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL\n" +
-                "PmmdzqPrVvPwwTWBwg\n" +
-                "wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn\n" +
-                "ttgJtRGJQctTZtZT\n" +
-                "CrZsJsPPZsGzwwsLwLmpwMDw"
+        val inputString ="""
+            vJrwpWtwJgWrhcsFMMfFFhFp
+            jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+            PmmdzqPrVvPwwTWBwg
+            wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+            ttgJtRGJQctTZtZT
+            CrZsJsPPZsGzwwsLwLmpwMDw
+        """.trimIndent()
 
         val input = ByteArrayInputStream(inputString.toByteArray())
 

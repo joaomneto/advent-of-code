@@ -38,7 +38,7 @@ object Day1Test {
         val expected =
             listOf(listOf(1000, 2000, 3000), listOf(4000), listOf(5000, 6000), listOf(7000, 8000, 9000), listOf(10000))
 
-        assertEquals(expected, Day1.parseFile(input))
+        assertEquals(expected, Day1.parseFilePart1(input))
     }
 
 
