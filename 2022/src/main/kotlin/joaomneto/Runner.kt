@@ -10,7 +10,7 @@ object Runner{
 }
 
 fun main() {
-    for(day in 1..5){
+    for(day in 1..25){
         try {
             val kclass = Class.forName("joaomneto.Day$day").kotlin
             kclass.members.first { it.name == "run" }.call(kclass.objectInstance)
